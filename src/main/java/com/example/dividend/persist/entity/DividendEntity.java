@@ -23,13 +23,13 @@ public class DividendEntity {
 
     private Long companyId;
 
-    private LocalDateTime dateTime;
+    private LocalDateTime date;
 
     private String dividend;
 
     public DividendEntity(Long companyId, Dividend dividend) {
         this.companyId = companyId;
-        this.dateTime = dividend.getDate();
+        this.date = dividend.getDate();
         this.dividend = dividend.getDividend();
     }
 }
