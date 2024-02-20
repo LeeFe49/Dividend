@@ -19,3 +19,6 @@
 ### Todo
 - [ ] 서버 띄우기
 - [ ] 간단한 UI 설계
+
+### 참고
+ - [우분투 jupyter notebook 설치 및 실행](https://somjang.tistory.com/entry/Python-Jupyter-Notebook-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
