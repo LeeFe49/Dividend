@@ -21,18 +21,22 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final JwtAuthenticationFilter authenticationFilter;
+    private static final String[] PERMIT_URL_ARRAY = {
+            "/**/signup",
+            "/**/signin"
+    };
 
     @Override
-    protected  void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {
         http
                 .httpBasic().disable()
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                    .authorizeHttpRequests()
-                    .antMatchers("/**/signup", "/**/signin").permitAll()
+                .authorizeHttpRequests()
+                .antMatchers(PERMIT_URL_ARRAY).permitAll()
                 .and()
-                    .addFilterBefore(this.authenticationFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(this.authenticationFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
     @Override
