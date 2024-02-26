@@ -15,13 +15,14 @@ spring:
     defer-datasource-initialization: false
 
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:dayone;DB_CLOSE_DELAY=-1
-    username: sa
-    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://dividend.cgrlepfqc0gc.ap-northeast-2.rds.amazonaws.com:3306/Dividend
+    username: admin
+    password: dlcjf0409
 
   redis:
-    host: localhost
+#    host: localhost
+    host: 172.17.0.1
     port: 6379
 
   jwt:
