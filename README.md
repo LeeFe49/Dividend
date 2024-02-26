@@ -3,8 +3,8 @@
 
 ### 프레임워크 & 라이브러리
 - java 11
-- Gradle 7.2
-- Spring Boot 2.5.6
+- Gradle 8.4
+- Spring Boot 2.7.18
 - h2 DB
 - Jsoup
 - redis
