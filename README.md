@@ -7,6 +7,8 @@
 - Spring Boot 2.5.6
 - h2 DB
 - Jsoup
+- redis
+- docker
 
 ### API
 - 회사 정보 저장
