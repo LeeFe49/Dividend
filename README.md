@@ -10,7 +10,8 @@
 - redis
 - docker
 
-### API [Swagger](http://3.35.193.182:8080/swagger-ui.html#/)
+### API
+-> [Swagger](http://3.35.193.182:8080/swagger-ui.html#/)
 - 회사 정보 저장
 - 저장된 회사 정보 삭제
 - 회사의 배당금 정보 조회
